@@ -11,7 +11,7 @@
   header{
     width:100%;
     top:0;
-    background-color: #EBE3D5;
+    background-color: #dfd4c2;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -21,7 +21,6 @@
   }
   
   .logo img{
-    background-color: #EBE3D5;
     width:200px;
     margin-left:1em;
     cursor:pointer;
