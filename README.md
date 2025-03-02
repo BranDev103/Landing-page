@@ -13,4 +13,4 @@
 
 ## 📸 Vista previa
 
-   <a href=" https://brandev103.github.io/Landing-page/">Algo simple pero funcional</a>
+   <a href="https://brandev103.github.io/Landing-page/">Vista aquí</a>
