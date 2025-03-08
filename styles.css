@@ -1,272 +1,345 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    background-color: #EBE3D5;
-  }
-  /***** HEADER ***********************/
-  header{
-    width:100%;
-    top:0;
-    background-color: #dfd4c2;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:fixed;
-    padding: 5px 10px;
-    z-index: 1;
-  }
-  
-  .logo img{
-    width:200px;
-    margin-left:1em;
-    cursor:pointer;
-  }
-  
-  #nav-bar{
-    margin-right:5em;
-  }
-  
-  #nav-bar ul{
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EBE3D5;
+}
+
+/***** HEADER ***********************/
+header {
+  width: 100%;
+  top: 0;
+  background-color: #dfd4c2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 5px 10px;
+  z-index: 1;
+}
+
+.logo img {
+  width: 200px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+#nav-bar {
+  margin-right: 5em;
+}
+
+#nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 7em;
+
+}
+
+#nav-bar a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+#nav-bar a:hover {
+  color: #837a71;
+}
+
+/***********************************************/
+
+/******* FORMULARIO ***************************/
+#formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  margin-top: 50px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 4em;
+  gap: 14px;
+}
+
+#formulario h2 {
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+
+}
+
+#email {
+  width: 70%;
+  height: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #F3EEEA;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#submit {
+  padding: 5px 2em;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background-color: #776B5D;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #B0A695;
+}
+
+/********************************************************/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/******* BENEFICIOS ************************************/
+.beneficios {
+  margin: 3em 0;
+}
+
+.container_grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2em;
+  gap: 4em;
+}
+
+.icono {
+  color: #776B5D;
+  font-size: 50px;
+}
+
+.description {
+  font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.description h2 {
+  font-size: 32px;
+}
+
+.description p {
+  font-size: 18px;
+}
+
+/******* HACER COMPRA ************************************/
+
+#video {
+  margin: 4em 0;
+  width: 700px;
+}
+
+/******* PRECIOS ************************************/
+.precios {
+  margin: 4em 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.producto {
+  width: 300px;
+  height: 400px;
+  background-color: #F3EEEA;
+  border: 2px solid #776B5D;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.nombre {
+  font-size: 32px;
+  padding: 20px 0;
+  font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  background-color: #B0A695;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.producto h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  padding: 1.5em 0;
+}
+
+.producto ol {
+  list-style: none;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.producto li {
+  padding: 8px;
+  font-size: 17px;
+}
+
+.button {
+  margin-top: 2em;
+  padding: 10px 50px;
+  cursor: pointer;
+
+  background-color: #776B5D;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #B0A695;
+}
+
+
+.slider
+{
     display: flex;
-    gap: 7em;
-         
-  }
-  
-  #nav-bar a{
-    text-decoration:none;
-    font-size:25px;
-    color:black;
-    font-family:'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight:bold;
-  }
-  
-  #nav-bar a:hover{
-    color:#837a71;
-  }
-  /***********************************************/
-  
-  /******* FORMULARIO ***************************/
-  #formulario{
-    display: flex;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
     align-items: center;
-    justify-content: center;
-    height: 250px;
-    margin-top: 50px;
-  }
-  
-  #form{
+}
+
+.slider::before{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    content: "";
+    width: 23.958%;
+    height: 200px;
+    background: linear-gradient(-90deg, hsla(0, 0%, 96.9%, 0), #f7f7f7);
+}
+
+.slider::after{
+    position: absolute;
+    right: 0;
+    content: "";
+    width: 23.958%;
+    height: 200px;
+    background: linear-gradient(
+        90deg,
+        hsla(0, 0%, 96.9%, 0),
+        hsla(0, 0%, 96.9%, 0.99)99%
+    );
+}
+
+.slider .slide-track{
     display: flex;
-    flex-direction:column;
-    text-align: center;
-    align-items:center;
-    margin-top:4em;
-    gap:14px;
+    animation: scroll 35s linear infinite;
+    -webkit-animation: scroll 35s linear infinite;
+    width: calc(240px *10);
+}
+
+.slider .slide{
+    display: flex;
+}
+
+.slider .slide img{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: #EBE3D5;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25)0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-240px*5));
+    }
+}
+
+
+
+footer {
+  margin-top: 5em;
+  padding: 1.5em 1em;
+  background-color: #B0A695;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  align-content: start;
+  gap: 2em;
+
+}
+
+footer li {
+  font-size: 18px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+footer li:hover {
+  color: #EBE3D5;
+}
+
+span {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-wrap: wrap;
   }
-  
-  #formulario h2{
-    
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:20px;
-  
+
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
   }
-  
-  #email{
-    width:70%;
-    height:25px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #F3EEEA;
-    border:1px solid grey;
-    border-radius:5px;
-    font-size:14px;
+
+  .logo img {
+    margin: 0 auto;
   }
-  
-  #submit{
-    padding:5px 2em;
-    font-size:16px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:white;
-    background-color:#776B5D;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-  }
-  
-  #submit:hover{
-    background-color:#B0A695;
-  }
-  /********************************************************/
-  .container {
+
+  nav {
+    margin-top: 10px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 0 50px;
   }
-  /******* BENEFICIOS ************************************/
-  .beneficios {
-    margin: 3em 0;
+
+  nav li {
+    padding-bottom: 5px;
   }
-  
-  .container_grid {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 2em;
-    gap: 4em;
+
+  nav>ul {
+    flex-direction: column;
   }
-  
-  .icono {
-    color: #776B5D;
-    font-size: 50px;
-  }
-  
-  .description {
-    font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  .description h2 {
-    font-size: 32px;
-  }
-  
-  .description p {
-    font-size: 18px;
-  }
-  
-  /******* HACER COMPRA ************************************/
-  
-  #video{
-    margin:4em 0;
-    width: 700px;
-  }
-  
-  /******* PRECIOS ************************************/
-  .precios{
-    margin: 4em 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:2em;
-  }
-  
-  .producto{
-    width:300px;
-    height:400px;
-    background-color:#F3EEEA;
-    border: 2px solid #776B5D;
-    border-radius: 10px;
-    text-align:center;
-  }
-  
-  .nombre{
-    font-size:32px;
-    padding:20px 0;
-    font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight:bold;
-    background-color:#B0A695;
-    color:white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  
-  .producto h2{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:25px;
-    padding:1.5em 0;
-  }
-  
-  .producto ol{
-    list-style:none;
-    font-size:15px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  .producto li{
-    padding:8px;
-    font-size:17px;
-  }
-  
-  .button{
-    margin-top:2em;
-    padding:10px 50px;
-    cursor:pointer;
-  
-    background-color: #776B5D;
-    border:none;
-    border-radius:6px;
-    color:white;
-    font-size:20px;
-    font-weight:bold;
-  }
-  
-  .button:hover{
-    background-color: #B0A695;
-  }
-  
-  footer{
-    margin-top:5em;
-    padding:1.5em 1em;
-    background-color:#B0A695;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  footer ul{
-    display:flex;
-    justify-content:flex-end;
-    list-style:none;
-    align-content:start;
-    gap:2em;
-    
-  }
-  
-  footer li{
-    font-size:18px;
-    padding-bottom:8px;
-    cursor:pointer;
-  }
-  
-  footer li:hover{
-    color:#EBE3D5;
-  }
-  
-  span{
-    display:flex;
-    justify-content:flex-end;
-    font-size:14px; 
-  }
-  
-  @media (max-width: 800px) {
-    header {
-      flex-wrap: wrap;
-    }
-  
-    .logo {
-      margin-top: 15px;
-      width: 100%;
-      position: relative;
-    }
-  
-    .logo img {
-      margin: 0 auto;
-    }
-  
-    nav {
-      margin-top: 10px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 0 50px;
-    }
-    nav li {
-      padding-bottom: 5px;
-    }
-  
-     nav > ul {
-      flex-direction: column;
-    }
-  
-  }
-  
+
+}
